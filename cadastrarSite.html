@@ -1,0 +1,33 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+
+<style>
+    
+</style>
+
+<body>
+    <div class="principal">
+        <div class="formulario">
+            <form action="save_movie.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="photo" required><br><br>
+                <input type="text" name="title" placeholder="Título" required><br><br>
+                <textarea name="texto" placeholder="texto" rows="4" cols="50" required></textarea><br><br>
+                <input type="text" name="rate" placeholder="rate" required><br><br>
+                <input type="text" name="linktrailer" placeholder="Trailer do Filme"><br><br>
+                <textarea name="texto2" placeholder="texto" rows="4" cols="50" required></textarea><br><br>
+                <select name="classificação" required>
+                    <option value="">Classificação</option>
+                    <option value="L" style="background-color: green;">L</option>
+                    <option value="12" style="background-color: yellow;">12</option>
+                    <option value="14" style="background-color: orange;">14</option>
+                    <option value="16" style="background-color: red;">16</option>
+                    <option value="18+" style="background-color: black; color:white;">18+</option>
+                </select>
+                <input type="submit" name="enviar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
